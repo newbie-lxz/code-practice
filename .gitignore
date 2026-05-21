@@ -5,6 +5,7 @@
 *.ilk
 *.pdb
 *.dll
+怎样操作.md
 
 build/
 .vs/
