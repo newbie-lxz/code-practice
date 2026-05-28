@@ -1,0 +1,48 @@
+实验名称：experiment_20260528_145329/round_2
+实验时间：2026-05-28 14:58:15
+
+输入视频：
+- 学习区：BV1Kr4y1i7ru
+- 生活区：BV1Rjc4zJEvz
+
+原始弹幕：D:\code\code_practice\python\爬虫\2\bilibili_sentiment_project\data\experiments\experiment_20260528_145329\raw_bilibili_danmu.csv
+采集总量：2160 / 目标 5000
+学习区采集量：1800 / 目标 2500
+生活区采集量：360 / 目标 2500
+训练数据：D:\code\code_practice\python\爬虫\2\bilibili_sentiment_project\data\danmu_sample_5000.csv
+预测数据：D:\code\code_practice\python\爬虫\2\bilibili_sentiment_project\data\experiments\experiment_20260528_145329\raw_bilibili_danmu.csv
+最优模型：逻辑回归
+历史人工反馈样本数：257
+中性种子样本数：53
+本轮待人工复核样本数：100
+本轮复核抽样比例：8%
+
+模型指标：
+model  accuracy       f1
+ 逻辑回归  0.889313 0.601261
+  SVM  0.885496 0.597403
+ 随机森林  0.874046 0.590554
+朴素贝叶斯  0.854962 0.574233
+
+分区情感统计：
+partition pred_label  count  total    ratio
+      学习区         中性    315   1580 0.199367
+      学习区         正面    412   1580 0.260759
+      学习区         负面    853   1580 0.539873
+      生活区         中性     29    257 0.112840
+      生活区         正面     76    257 0.295720
+      生活区         负面    152    257 0.591440
+
+结果目录：D:\code\code_practice\python\爬虫\2\bilibili_sentiment_project\results\experiment_20260528_145329\round_2
+图表目录：D:\code\code_practice\python\爬虫\2\bilibili_sentiment_project\figures\experiment_20260528_145329\round_2
+待复核样本：D:\code\code_practice\python\爬虫\2\bilibili_sentiment_project\results\experiment_20260528_145329\round_2\review_samples.csv
+自动分析摘要：D:\code\code_practice\python\爬虫\2\bilibili_sentiment_project\results\experiment_20260528_145329\round_2\analysis_summary.md
+低置信样本：D:\code\code_practice\python\爬虫\2\bilibili_sentiment_project\results\experiment_20260528_145329\round_2\low_confidence_samples.csv
+词典模型冲突样本：D:\code\code_practice\python\爬虫\2\bilibili_sentiment_project\results\experiment_20260528_145329\round_2\conflict_samples.csv
+按视频统计：D:\code\code_practice\python\爬虫\2\bilibili_sentiment_project\results\experiment_20260528_145329\round_2\video_sentiment_stats.csv
+与上一轮对比：D:\code\code_practice\python\爬虫\2\bilibili_sentiment_project\results\experiment_20260528_145329\round_2\iteration_comparison.csv
+
+按情感分类导出的弹幕：
+- 正面：D:\code\code_practice\python\爬虫\2\bilibili_sentiment_project\results\experiment_20260528_145329\round_2\positive_comments.csv
+- 负面：D:\code\code_practice\python\爬虫\2\bilibili_sentiment_project\results\experiment_20260528_145329\round_2\negative_comments.csv
+- 中性：D:\code\code_practice\python\爬虫\2\bilibili_sentiment_project\results\experiment_20260528_145329\round_2\neutral_comments.csv
