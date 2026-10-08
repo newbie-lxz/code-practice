@@ -1,18 +1,23 @@
 # 注释版代码说明
 
-这个文件夹只用于阅读代码，正式运行仍然使用 `src/` 目录里的原始脚本。
-
-读完可以直接删除整个 `annotated_code/` 文件夹，不会影响项目运行。
+本目录只用于阅读代码，正式运行使用 `src/` 目录中的 Notebook。
 
 建议阅读顺序：
 
-1. `run_experiment_annotated.py`：先看一键运行主流程。
-2. `crawler_bilibili_annotated.py`：再看 B 站弹幕怎么爬。
-3. `train_analyze_annotated.py`：重点看清洗、分词、情感词典、模型训练、预测和图表输出。
-4. `make_sample_data_annotated.py`：最后看演示样例数据怎么生成。
+1. `run_experiment_annotated.ipynb`：理解四轮主动学习总流程。
+2. `crawler_bilibili_annotated.ipynb`：理解 BV、cid、视频信息和弹幕采集。
+3. `train_analyze_annotated.ipynb`：重点阅读清洗、特征、四模型、篇章分析和输出。
+4. `make_sample_data_annotated.ipynb`：理解演示训练数据如何生成。
 
-正式运行命令仍然是：
+辅助说明：
 
-```powershell
-python src\run_experiment.py
-```
+- `lexicon说明.md`：词典如何加载和匹配。
+- `分类规则说明.md`：模型与最终标签规则如何配合。
+
+正式使用方法：
+
+1. 用 VS Code 或 Jupyter 打开 `src/run_experiment.ipynb`。
+2. 点击 `Run All / 全部运行`。
+3. 按提示输入实验名称和两个 BV 号。
+
+删除整个 `annotated_code/` 不会影响正式运行。

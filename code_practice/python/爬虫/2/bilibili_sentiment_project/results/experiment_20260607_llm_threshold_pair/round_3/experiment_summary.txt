@@ -1,0 +1,23 @@
+实验名称：experiment_20260607_llm_threshold_pair/round_3
+生活区：对不起老板，我真的有在好好玩✋🏻😭🤚🏻（BV1VvLc6AEGb），1200 条
+知识区：【毕导】被网友打脸了！居然真能这样？！（BV1jj5C6HEPd），1200 条
+原始弹幕：D:\code\code_practice\python\爬虫\2\bilibili_sentiment_project\data\experiments\experiment_20260607_llm_threshold_pair\raw_bilibili_danmu.csv
+总弹幕数：2400
+最优模型：SVM
+训练样本数：2745
+历史人工反馈数：1676
+待复核样本数：99
+
+model  accuracy       f1
+  SVM  0.714026 0.636583
+ 逻辑回归  0.701275 0.633728
+ 随机森林  0.661202 0.598579
+朴素贝叶斯  0.683060 0.500922
+
+partition pred_label  count  total    ratio
+      生活区         中性    591   1064 0.555451
+      生活区         正面    296   1064 0.278195
+      生活区         负面    177   1064 0.166353
+      知识区         中性    419    600 0.698333
+      知识区         正面     98    600 0.163333
+      知识区         负面     83    600 0.138333

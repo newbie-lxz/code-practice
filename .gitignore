@@ -14,3 +14,33 @@ x64/
 Debug/
 Release/
 .vscode/settings.json
+
+# Environment variables and credentials
+.env
+.env.*
+*.env
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Python-generated local files
+__pycache__/
+*.py[cod]
+
+# Keep the AI practice area private except for the shareable AI_Partner project.
+code_practice/python/ai/*
+!code_practice/python/ai/AI_Partner/
+!code_practice/python/ai/AI_Partner/**
+
+# AI_Partner local conversation data
+code_practice/python/ai/AI_Partner/session_data/
+
+# These rules come last so project-specific allowlists can never re-include secrets.
+.env
+.env.*
+*.env
+*.pem
+*.key
+*.p12
+*.pfx

@@ -1,0 +1,25 @@
+实验名称：experiment_20260607_llm_replacement_life/round_1
+生活区：说到做到！不计成本逛离谱超市，会花多少钱？（BV1X75X6rEui），1200 条
+知识区：【最后一课】2X2联表与独立性检验！（BV1zrGi6PE9B），2500 条
+原始弹幕：D:\code\code_practice\python\爬虫\2\bilibili_sentiment_project\data\experiments\experiment_20260607_llm_replacement_life\raw_bilibili_danmu.csv
+总弹幕数：3700
+知识区弹幕数：2500
+生活区弹幕数：1200
+最优模型：SVM
+训练样本数：2245
+历史人工反馈数：1176
+待复核样本数：100
+
+model  accuracy       f1
+  SVM  0.755011 0.659722
+ 逻辑回归  0.734967 0.649525
+ 随机森林  0.690423 0.606998
+朴素贝叶斯  0.712695 0.491143
+
+partition pred_label  count  total    ratio
+      生活区         中性    658   1028 0.640078
+      生活区         正面    181   1028 0.176070
+      生活区         负面    189   1028 0.183852
+      知识区         中性    489   1216 0.402138
+      知识区         正面    624   1216 0.513158
+      知识区         负面    103   1216 0.084704

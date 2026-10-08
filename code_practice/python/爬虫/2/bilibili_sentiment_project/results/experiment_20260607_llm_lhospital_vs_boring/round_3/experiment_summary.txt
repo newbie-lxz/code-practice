@@ -1,0 +1,25 @@
+实验名称：experiment_20260607_llm_lhospital_vs_boring/round_3
+知识区视频：BV1uz4y1475S（洛必达法则）
+生活区视频：BV1YBvhBhE1f（史上最无聊比赛）
+原始弹幕：D:\code\code_practice\python\爬虫\2\bilibili_sentiment_project\data\experiments\experiment_20260607_llm_lhospital_vs_boring\raw_bilibili_danmu.csv
+总弹幕数：4300
+知识区弹幕数：2500
+生活区弹幕数：1800
+最优模型：逻辑回归
+训练样本数：1856
+历史人工反馈数：787
+待复核样本数：100
+
+model  accuracy       f1
+ 逻辑回归  0.763441 0.680397
+ 随机森林  0.736559 0.633732
+  SVM  0.747312 0.627226
+朴素贝叶斯  0.725806 0.498045
+
+partition pred_label  count  total    ratio
+      学习区         中性   1008   1616 0.623762
+      学习区         正面    279   1616 0.172649
+      学习区         负面    329   1616 0.203589
+      生活区         中性    596   1134 0.525573
+      生活区         正面    277   1134 0.244268
+      生活区         负面    261   1134 0.230159

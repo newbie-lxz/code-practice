@@ -1,0 +1,9 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+requests
+jieba
+wordcloud
+python-docx
+python-pptx

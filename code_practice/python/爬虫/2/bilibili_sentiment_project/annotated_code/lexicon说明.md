@@ -1,16 +1,22 @@
 # 情感词典说明
 
-`train_analyze_annotated.py` 里看到的 `DEFAULT_POS_WORDS` 和 `DEFAULT_NEG_WORDS` 不是完整词典，只是兜底小词表。
+项目使用两层词典：
 
-真正参与分析的是：
+1. `src/train_analyze.ipynb` 内的默认小词表，用于提供稳定兜底词。
+2. `data/sentiment_lexicon/` 中的 HowNet/知网正负面词典，作为主要外部词典。
 
-- `data/sentiment_lexicon/hownet_positive.txt`：正面词典，约 1226 行。
-- `data/sentiment_lexicon/hownet_negative.txt`：负面词典，约 1413 行。
+当前文件：
 
-程序在 `load_sentiment_words()` 里会这样做：
+- `data/sentiment_lexicon/hownet_positive.txt`
+- `data/sentiment_lexicon/hownet_negative.txt`
 
-1. 先读取 `DEFAULT_POS_WORDS`、`DEFAULT_NEG_WORDS`。
-2. 再读取 `data/sentiment_lexicon/` 下面的 HowNet/知网词典文件。
-3. 最后合并成 `POS_WORDS` 和 `NEG_WORDS`。
+程序会清洗、去重并合并词典。情感匹配采用“最长短语优先且不重叠”的方式，避免短词重复计分。
 
-所以模型实际使用的是合并后的大词典，不是截图里那几十个默认词。
+词典主要用于：
+
+- 生成正负情感词数量与分数。
+- 辅助模型训练。
+- 分析转折、混合情感和情感方面。
+- 发现模型与词典冲突的待复核样本。
+
+词典不是最终裁判。网络梗、反讽、上下文和新词仍需要机器学习概率及人工复核共同处理。

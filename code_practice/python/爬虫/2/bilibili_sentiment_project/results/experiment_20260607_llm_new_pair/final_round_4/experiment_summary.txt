@@ -1,0 +1,25 @@
+实验名称：experiment_20260607_llm_new_pair/final_round_4
+生活区：过年啦过年啦（BV1xsVh6eEK7），360 条
+知识区：【最后一课】2X2联表与独立性检验！（BV1zrGi6PE9B），2500 条
+原始弹幕：D:\code\code_practice\python\爬虫\2\bilibili_sentiment_project\data\experiments\experiment_20260607_llm_new_pair\raw_bilibili_danmu.csv
+总弹幕数：2860
+知识区弹幕数：2500
+生活区弹幕数：360
+最优模型：逻辑回归
+训练样本数：2245
+历史人工反馈数：1176
+待复核样本数：83
+
+model  accuracy       f1
+ 逻辑回归  0.761693 0.666558
+  SVM  0.752784 0.633782
+ 随机森林  0.703786 0.622786
+朴素贝叶斯  0.721604 0.497034
+
+partition pred_label  count  total    ratio
+      生活区         中性     24    169 0.142012
+      生活区         正面    133    169 0.786982
+      生活区         负面     12    169 0.071006
+      知识区         中性    474   1216 0.389803
+      知识区         正面    622   1216 0.511513
+      知识区         负面    120   1216 0.098684
